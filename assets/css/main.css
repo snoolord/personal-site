@@ -1706,14 +1706,7 @@
 	}
 
 		p.content {
-			-moz-columns: 20em 2;
-			-webkit-columns: 20em 2;
-			-ms-columns: 20em 2;
-			columns: 20em 2;
-			-moz-column-gap: 2em;
-			-webkit-column-gap: 2em;
-			-ms-column-gap: 2em;
-			column-gap: 2em;
+			
 			text-align: justify;
 		}
 
@@ -2660,12 +2653,34 @@
 	}
 
 /* Section/Article */
+	.code {
+		width: 65%
+	}
+	.html {
+		width: 65%;
+	}
+
+	.rails {
+		width: 65%;
+	}
 
 	.react {
-		width: 67%
+		width: 67%;
 	}
 	.ruby {
 		width: 65%;
+	}
+
+	.gnome {
+		width: 56%;
+	}
+
+	.broom {
+		width: 67%;
+	}
+
+	.upword {
+		width: 100%
 	}
 	section.special, article.special {
 		text-align: center;
