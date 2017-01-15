@@ -3111,6 +3111,21 @@
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+.trigger {
+	height: 35%;
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 10;
+}
+.trigger:hover {
+	cursor: pointer;
+}
+
 /* Header */
 .clearfix:after {
 	content: " "; /* Older browser do not support empty content */
@@ -3131,8 +3146,8 @@
 		left: 0;
 		right: 0;
 		width: 75%;
-		cursor: pointer;
 	}
+
 	#header {
 		padding: 5em 5em 1em 5em ;
 		height: 100vh;

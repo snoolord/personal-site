@@ -141,7 +141,7 @@ var vHeight = $(window).height(),
 				speed: 1000
 			});
 
-            $('.ice-bear')
+            $('.trigger')
                 .on('click', function() {
                     console.log("hello");
                     $('body, html').animate({scrollTop: $('nav').offset().top})
