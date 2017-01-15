@@ -143,7 +143,6 @@ var vHeight = $(window).height(),
 
             $('.trigger')
                 .on('click', function() {
-                    console.log("hello");
                     $('body, html').animate({scrollTop: $('nav').offset().top})
                 })
 
