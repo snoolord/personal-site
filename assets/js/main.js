@@ -141,6 +141,12 @@ var vHeight = $(window).height(),
 				speed: 1000
 			});
 
+            $('.ice-bear')
+                .on('click', function() {
+                    console.log("hello");
+                    $('body, html').animate({scrollTop: $('nav').offset().top})
+                })
+
 	});
 
 })(jQuery);

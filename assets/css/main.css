@@ -1706,7 +1706,7 @@
 	}
 
 		p.content {
-			
+
 			text-align: justify;
 		}
 
@@ -3123,11 +3123,19 @@
 	/* height: 748px; */
 	}
 
-	.ice-bear {
-		margin-top: -39%;
+	#header > .ice-bear {
+		position: absolute;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		width: 75%;
+		cursor: pointer;
 	}
 	#header {
 		padding: 5em 5em 1em 5em ;
+		height: 100vh;
 		text-align: center;
 	}
 
