@@ -140,7 +140,13 @@ var vHeight = $(window).height(),
 			$('.scrolly').scrolly({
 				speed: 1000
 			});
-
+            console.log(vWidth/vHeight >= 934/509);
+            if (vWidth / vHeight >= 1021/576) {
+                $('#ice-bear').css("width", "60%");
+            } else if ( vWidth / vHeight >= 934/509) {
+                console.log("what");
+                $('#ice-bear').css("display", "none");
+            }
             $('.trigger')
                 .on('click', function() {
                     $('body, html').animate({scrollTop: $('nav').offset().top})
