@@ -6,7 +6,8 @@
 //
 var vHeight = $(window).height(),
     vWidth = $(window).width()
-		console.log(vHeight, vWidth);
+		console.log(vHeight, "HEIGHT");
+        console.log(vWidth, "WIDTH" );
 //     cover = $('.header');
 //
 // cover.css({"height":vHeight,"width":vWidth});
@@ -140,13 +141,25 @@ var vHeight = $(window).height(),
 			$('.scrolly').scrolly({
 				speed: 1000
 			});
-            console.log(vWidth/vHeight >= 934/509);
-            if (vWidth / vHeight >= 1021/576) {
-                $('#ice-bear').css("width", "60%");
-            } else if ( vWidth / vHeight >= 934/509) {
-                console.log("what");
-                $('#ice-bear').css("display", "none");
+            // for each key frame need to have differe dimensions for bear
+            // xlarge: '(max-width: 1680px)',
+            // large: '(max-width: 1280px)',
+            // medium: '(max-width: 980px)',
+            // small: '(max-width: 736px)',
+            // xsmall: '(max-width: 480px)',
+            // xxsmall: '(max-width: 360px)'
+            if ( vWidth > 1280 && vHeight < 780) {
+                $('#ice-bear').css('width', '60%');
             }
+            if ( (vWidth <= 1280 && vHeight <= 590 )|| (vWidth > 980 && vHeight < 535) ) {
+                $('#ice-bear').css("width", "60%");
+            } else if ( (vWidth <= 980 && vHeight <= 535 )|| (vWidth > 980 && vHeight < 535) ) {
+
+            }
+
+
+
+
             $('.trigger')
                 .on('click', function() {
                     $('body, html').animate({scrollTop: $('nav').offset().top})
