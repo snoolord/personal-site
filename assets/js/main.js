@@ -141,25 +141,6 @@ var vHeight = $(window).height(),
 			$('.scrolly').scrolly({
 				speed: 1000
 			});
-            // for each key frame need to have differe dimensions for bear
-            // xlarge: '(max-width: 1680px)',
-            // large: '(max-width: 1280px)',
-            // medium: '(max-width: 980px)',
-            // small: '(max-width: 736px)',
-            // xsmall: '(max-width: 480px)',
-            // xxsmall: '(max-width: 360px)'
-            if ( vWidth > 1280 && vHeight < 780) {
-                $('#ice-bear').css('width', '60%');
-            }
-            if ( (vWidth <= 1280 && vHeight <= 590 )|| (vWidth > 980 && vHeight < 535) ) {
-                $('#ice-bear').css("width", "60%");
-            } else if ( (vWidth <= 980 && vHeight <= 535 )|| (vWidth > 980 && vHeight < 535) ) {
-
-            }
-
-
-
-
             $('.trigger')
                 .on('click', function() {
                     $('body, html').animate({scrollTop: $('nav').offset().top})
